@@ -1,0 +1,5 @@
+server\UserServiceImpl.class
+common\Application.class
+service\UserService.class
+common\User$UserBuilder.class
+common\User.class
