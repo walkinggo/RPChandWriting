@@ -2,6 +2,7 @@ package client;
 
 import common.User;
 import lombok.extern.slf4j.Slf4j;
+import service.UserService;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -14,19 +15,12 @@ public class RPCClient {
 
 
     public static void main(String[] args) {
-        try {
-            Socket socket = new Socket("127.0.0.1", 8899);
-            ObjectOutputStream objectOutputStream = new ObjectOutputStream(socket.getOutputStream());
-            ObjectInputStream objectInputStream = new ObjectInputStream(socket.getInputStream());
-            objectOutputStream.writeInt(new Random().nextInt());
-            objectOutputStream.flush();
-            User user = (User) objectInputStream.readObject();
-//            System.out.println("user = " + user);
-            log.info("user = " + user);
-        }
-        catch (IOException | ClassNotFoundException e){
-            e.printStackTrace();
-            log.warn("客户端启动失败");
-        }
+        ClientProxy clientProxy = new ClientProxy("127.0.0.1", 8899);
+        UserService proxy = clientProxy.getProxy(UserService.class);
+        User userById = proxy.getUserById(10);
+        User user = User.builder().userName("张三").id(100).sex(true).build();
+        Integer integer = proxy.insertUserId(user);
+        log.info("user:{}",userById);
+        log.info("插入成功,{}",integer);
     }
 }

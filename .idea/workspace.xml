@@ -3,8 +3,39 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="31add1b6-210b-4bff-89b7-6b9b4d286aac" name="Default Changelist" comment="" />
+    <list default="true" id="31add1b6-210b-4bff-89b7-6b9b4d286aac" name="Default Changelist" comment="0.0 version">
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/ClientProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/IOClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/common/RPCRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/common/RPCResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/RPCClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/RPCClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/RPCServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/RPCServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/RPCServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/RPCServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/UserService.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +48,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -35,18 +69,23 @@
     </option>
   </component>
   <component name="ProjectId" id="2TvTmlY2K32gXNujI1OXLvJsnvi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RunManager" selected="Application.RPCClient">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -88,15 +127,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -122,38 +159,70 @@
       <workItem from="1691924743589" duration="990000" />
       <workItem from="1691925751542" duration="570000" />
       <workItem from="1691926335659" duration="1779000" />
-      <workItem from="1691990614039" duration="8506000" />
+      <workItem from="1691990614039" duration="10721000" />
+      <workItem from="1692071333054" duration="3865000" />
     </task>
+    <task id="LOCAL-00001" summary="0.0 version">
+      <created>1692007026739</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1692007026740</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="0.0 version" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.0 version" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="659" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1691924569196">
+    <state x="659" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1692083763411">
       <screen x="0" y="0" width="1707" height="1067" />
     </state>
-    <state x="659" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1707.1067@0.0.1707.1067" timestamp="1691924569196" />
-    <state x="668" y="453" key="Github.CreateGistDialog" timestamp="1692006785465">
+    <state x="659" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1707.1067@0.0.1707.1067" timestamp="1692083763411" />
+    <state x="634" y="275" key="FileChooserDialogImpl" timestamp="1692006959650">
       <screen x="0" y="0" width="1707" height="1067" />
     </state>
-    <state x="668" y="453" key="Github.CreateGistDialog/0.0.1707.1067@0.0.1707.1067" timestamp="1692006785465" />
-    <state width="1663" height="290" key="GridCell.Tab.0.bottom" timestamp="1692005599327">
+    <state x="634" y="275" key="FileChooserDialogImpl/0.0.1707.1067@0.0.1707.1067" timestamp="1692006959650" />
+    <state x="668" y="453" key="Github.CreateGistDialog" timestamp="1692006834581">
       <screen x="0" y="0" width="1707" height="1067" />
     </state>
-    <state width="1663" height="290" key="GridCell.Tab.0.bottom/0.0.1707.1067@0.0.1707.1067" timestamp="1692005599327" />
-    <state width="1663" height="290" key="GridCell.Tab.0.center" timestamp="1692005599327">
+    <state x="668" y="453" key="Github.CreateGistDialog/0.0.1707.1067@0.0.1707.1067" timestamp="1692006834581" />
+    <state x="706" y="431" key="Github.ShareDialog" timestamp="1692007096103">
       <screen x="0" y="0" width="1707" height="1067" />
     </state>
-    <state width="1663" height="290" key="GridCell.Tab.0.center/0.0.1707.1067@0.0.1707.1067" timestamp="1692005599327" />
-    <state width="1663" height="290" key="GridCell.Tab.0.left" timestamp="1692005599327">
+    <state x="706" y="431" key="Github.ShareDialog/0.0.1707.1067@0.0.1707.1067" timestamp="1692007096103" />
+    <state width="1663" height="291" key="GridCell.Tab.0.bottom" timestamp="1692072544975">
       <screen x="0" y="0" width="1707" height="1067" />
     </state>
-    <state width="1663" height="290" key="GridCell.Tab.0.left/0.0.1707.1067@0.0.1707.1067" timestamp="1692005599327" />
-    <state width="1663" height="290" key="GridCell.Tab.0.right" timestamp="1692005599327">
+    <state width="1663" height="291" key="GridCell.Tab.0.bottom/0.0.1707.1067@0.0.1707.1067" timestamp="1692072544975" />
+    <state width="1663" height="291" key="GridCell.Tab.0.center" timestamp="1692072544975">
       <screen x="0" y="0" width="1707" height="1067" />
     </state>
-    <state width="1663" height="290" key="GridCell.Tab.0.right/0.0.1707.1067@0.0.1707.1067" timestamp="1692005599327" />
+    <state width="1663" height="291" key="GridCell.Tab.0.center/0.0.1707.1067@0.0.1707.1067" timestamp="1692072544975" />
+    <state width="1663" height="291" key="GridCell.Tab.0.left" timestamp="1692072544975">
+      <screen x="0" y="0" width="1707" height="1067" />
+    </state>
+    <state width="1663" height="291" key="GridCell.Tab.0.left/0.0.1707.1067@0.0.1707.1067" timestamp="1692072544975" />
+    <state width="1663" height="291" key="GridCell.Tab.0.right" timestamp="1692072544975">
+      <screen x="0" y="0" width="1707" height="1067" />
+    </state>
+    <state width="1663" height="291" key="GridCell.Tab.0.right/0.0.1707.1067@0.0.1707.1067" timestamp="1692072544975" />
     <state width="1663" height="358" key="GridCell.Tab.1.bottom" timestamp="1691941044445">
       <screen x="0" y="0" width="1707" height="1067" />
     </state>
@@ -170,10 +239,14 @@
       <screen x="0" y="0" width="1707" height="1067" />
     </state>
     <state width="1663" height="358" key="GridCell.Tab.1.right/0.0.1707.1067@0.0.1707.1067" timestamp="1691941044445" />
-    <state x="355" y="178" key="SettingsEditor" timestamp="1691926411337">
+    <state x="355" y="178" key="SettingsEditor" timestamp="1692006930508">
       <screen x="0" y="0" width="1707" height="1067" />
     </state>
-    <state x="355" y="178" key="SettingsEditor/0.0.1707.1067@0.0.1707.1067" timestamp="1691926411337" />
+    <state x="355" y="178" key="SettingsEditor/0.0.1707.1067@0.0.1707.1067" timestamp="1692006930508" />
+    <state x="446" y="267" key="Vcs.Push.Dialog.v2" timestamp="1692008409608">
+      <screen x="0" y="0" width="1707" height="1067" />
+    </state>
+    <state x="446" y="267" key="Vcs.Push.Dialog.v2/0.0.1707.1067@0.0.1707.1067" timestamp="1692008409608" />
     <state x="241" y="194" key="new project wizard" timestamp="1691922762931">
       <screen x="0" y="0" width="1707" height="1067" />
     </state>
