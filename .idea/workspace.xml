@@ -22,12 +22,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31add1b6-210b-4bff-89b7-6b9b4d286aac" name="Default Changelist" comment="1.0 version 使用动态代理">
+    <list default="true" id="31add1b6-210b-4bff-89b7-6b9b4d286aac" name="Default Changelist" comment="1.0 version 使用动态代理。修改warn">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/common/Blog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/server/BlogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/server/ServiceProvide.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/server/SimpleRPCRPCServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/server/WorkThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/server/serverStart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/BlogService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/IOClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/IOClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/client/RPCClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/RPCClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/common/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/RPCClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/RPCClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/RPCServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/RPCServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/RPCServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/RPCServer.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +78,7 @@
   <component name="PropertiesComponent">
     <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
@@ -80,16 +88,23 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
-  <component name="RunManager" selected="Application.RPCServer">
+  <component name="RunManager" selected="Application.RPCClient">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="common.Application" />
       <module name="RPChandWriting" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="common.*" />
+          <option name="PATTERN" value="service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NextFridayCalculation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NextFridayCalculation" />
+      <module name="RPChandWriting" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -120,6 +135,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="serverStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="server.serverStart" />
+      <module name="RPChandWriting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -134,6 +162,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.RPCClient" />
+        <item itemvalue="Application.NextFridayCalculation" />
+        <item itemvalue="Application.serverStart" />
         <item itemvalue="Application.RPCServer" />
         <item itemvalue="Application.Application" />
       </list>
@@ -153,7 +183,7 @@
       <workItem from="1691925751542" duration="570000" />
       <workItem from="1691926335659" duration="1779000" />
       <workItem from="1691990614039" duration="10721000" />
-      <workItem from="1692071333054" duration="4505000" />
+      <workItem from="1692071333054" duration="9455000" />
     </task>
     <task id="LOCAL-00001" summary="0.0 version">
       <created>1692007026739</created>
@@ -169,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692084637009</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1.0 version 使用动态代理。修改warn">
+      <created>1692085026081</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1692085026081</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,13 +226,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="0.0 version" />
     <MESSAGE value="1.0 version 使用动态代理" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.0 version 使用动态代理" />
+    <MESSAGE value="1.0 version 使用动态代理。修改warn" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.0 version 使用动态代理。修改warn" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="659" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1692083763411">
+    <state x="659" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1692088733986">
       <screen x="0" y="0" width="1707" height="1067" />
     </state>
-    <state x="659" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1707.1067@0.0.1707.1067" timestamp="1692083763411" />
+    <state x="659" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1707.1067@0.0.1707.1067" timestamp="1692088733986" />
     <state x="634" y="275" key="FileChooserDialogImpl" timestamp="1692006959650">
       <screen x="0" y="0" width="1707" height="1067" />
     </state>
@@ -208,38 +246,38 @@
       <screen x="0" y="0" width="1707" height="1067" />
     </state>
     <state x="706" y="431" key="Github.ShareDialog/0.0.1707.1067@0.0.1707.1067" timestamp="1692007096103" />
-    <state width="1663" height="291" key="GridCell.Tab.0.bottom" timestamp="1692085000128">
+    <state width="1663" height="291" key="GridCell.Tab.0.bottom" timestamp="1692089794715">
       <screen x="0" y="0" width="1707" height="1067" />
     </state>
-    <state width="1663" height="291" key="GridCell.Tab.0.bottom/0.0.1707.1067@0.0.1707.1067" timestamp="1692085000128" />
-    <state width="1663" height="291" key="GridCell.Tab.0.center" timestamp="1692085000128">
+    <state width="1663" height="291" key="GridCell.Tab.0.bottom/0.0.1707.1067@0.0.1707.1067" timestamp="1692089794715" />
+    <state width="1663" height="291" key="GridCell.Tab.0.center" timestamp="1692089794715">
       <screen x="0" y="0" width="1707" height="1067" />
     </state>
-    <state width="1663" height="291" key="GridCell.Tab.0.center/0.0.1707.1067@0.0.1707.1067" timestamp="1692085000128" />
-    <state width="1663" height="291" key="GridCell.Tab.0.left" timestamp="1692085000128">
+    <state width="1663" height="291" key="GridCell.Tab.0.center/0.0.1707.1067@0.0.1707.1067" timestamp="1692089794715" />
+    <state width="1663" height="291" key="GridCell.Tab.0.left" timestamp="1692089794715">
       <screen x="0" y="0" width="1707" height="1067" />
     </state>
-    <state width="1663" height="291" key="GridCell.Tab.0.left/0.0.1707.1067@0.0.1707.1067" timestamp="1692085000128" />
-    <state width="1663" height="291" key="GridCell.Tab.0.right" timestamp="1692085000128">
+    <state width="1663" height="291" key="GridCell.Tab.0.left/0.0.1707.1067@0.0.1707.1067" timestamp="1692089794715" />
+    <state width="1663" height="291" key="GridCell.Tab.0.right" timestamp="1692089794715">
       <screen x="0" y="0" width="1707" height="1067" />
     </state>
-    <state width="1663" height="291" key="GridCell.Tab.0.right/0.0.1707.1067@0.0.1707.1067" timestamp="1692085000128" />
-    <state width="1663" height="358" key="GridCell.Tab.1.bottom" timestamp="1691941044445">
+    <state width="1663" height="291" key="GridCell.Tab.0.right/0.0.1707.1067@0.0.1707.1067" timestamp="1692089794715" />
+    <state width="1663" height="358" key="GridCell.Tab.1.bottom" timestamp="1692089552969">
       <screen x="0" y="0" width="1707" height="1067" />
     </state>
-    <state width="1663" height="358" key="GridCell.Tab.1.bottom/0.0.1707.1067@0.0.1707.1067" timestamp="1691941044445" />
-    <state width="1663" height="358" key="GridCell.Tab.1.center" timestamp="1691941044445">
+    <state width="1663" height="358" key="GridCell.Tab.1.bottom/0.0.1707.1067@0.0.1707.1067" timestamp="1692089552969" />
+    <state width="1663" height="358" key="GridCell.Tab.1.center" timestamp="1692089552968">
       <screen x="0" y="0" width="1707" height="1067" />
     </state>
-    <state width="1663" height="358" key="GridCell.Tab.1.center/0.0.1707.1067@0.0.1707.1067" timestamp="1691941044445" />
-    <state width="1663" height="358" key="GridCell.Tab.1.left" timestamp="1691941044445">
+    <state width="1663" height="358" key="GridCell.Tab.1.center/0.0.1707.1067@0.0.1707.1067" timestamp="1692089552968" />
+    <state width="1663" height="358" key="GridCell.Tab.1.left" timestamp="1692089552967">
       <screen x="0" y="0" width="1707" height="1067" />
     </state>
-    <state width="1663" height="358" key="GridCell.Tab.1.left/0.0.1707.1067@0.0.1707.1067" timestamp="1691941044445" />
-    <state width="1663" height="358" key="GridCell.Tab.1.right" timestamp="1691941044445">
+    <state width="1663" height="358" key="GridCell.Tab.1.left/0.0.1707.1067@0.0.1707.1067" timestamp="1692089552967" />
+    <state width="1663" height="358" key="GridCell.Tab.1.right" timestamp="1692089552968">
       <screen x="0" y="0" width="1707" height="1067" />
     </state>
-    <state width="1663" height="358" key="GridCell.Tab.1.right/0.0.1707.1067@0.0.1707.1067" timestamp="1691941044445" />
+    <state width="1663" height="358" key="GridCell.Tab.1.right/0.0.1707.1067@0.0.1707.1067" timestamp="1692089552968" />
     <state x="355" y="178" key="SettingsEditor" timestamp="1692006930508">
       <screen x="0" y="0" width="1707" height="1067" />
     </state>
@@ -252,5 +290,16 @@
       <screen x="0" y="0" width="1707" height="1067" />
     </state>
     <state x="241" y="194" key="new project wizard/0.0.1707.1067@0.0.1707.1067" timestamp="1691922762931" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/server/SimpleRPCRPCServer.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

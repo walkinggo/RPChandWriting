@@ -1,14 +1,10 @@
 package client;
 
+import common.Blog;
 import common.User;
 import lombok.extern.slf4j.Slf4j;
+import service.BlogService;
 import service.UserService;
-
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.net.Socket;
-import java.util.Random;
 
 @Slf4j
 public class RPCClient {
@@ -20,7 +16,13 @@ public class RPCClient {
         User userById = proxy.getUserById(10);
         User user = User.builder().userName("张三").id(100).sex(true).build();
         Integer integer = proxy.insertUserId(user);
-        log.info("user:{}",userById);
-        log.info("插入成功,{}",integer);
+        log.info("user:{}", userById);
+        log.info("插入成功,{}", integer);
+
+        // 客户中添加新的测试用例
+        BlogService blogService = clientProxy.getProxy(BlogService.class);
+        Blog blogById = blogService.getBlogById(1000);
+        log.info("blog业务测试结果：{}",blogById);
+
     }
 }
