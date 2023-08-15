@@ -22,7 +22,6 @@ public class IOClient {
             objectOutputStream.writeObject(request);
             objectOutputStream.flush();
             response = (RPCResponse) objectInputStream.readObject();
-            return response;
         } catch (UnknownHostException e) {
             e.printStackTrace();
             log.warn("定义了未知的port");

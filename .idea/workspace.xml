@@ -22,19 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31add1b6-210b-4bff-89b7-6b9b4d286aac" name="Default Changelist" comment="0.0 version">
-      <change afterPath="$PROJECT_DIR$/src/main/java/client/ClientProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/client/IOClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/common/RPCRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/common/RPCResponse.java" afterDir="false" />
+    <list default="true" id="31add1b6-210b-4bff-89b7-6b9b4d286aac" name="Default Changelist" comment="1.0 version 使用动态代理">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/RPCClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/RPCClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/RPCServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/RPCServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/RPCServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/RPCServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/IOClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/IOClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/RPCClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/RPCClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/common/Application.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +80,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
-  <component name="RunManager" selected="Application.RPCClient">
+  <component name="RunManager" selected="Application.RPCServer">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="common.Application" />
       <module name="RPChandWriting" />
@@ -160,7 +153,7 @@
       <workItem from="1691925751542" duration="570000" />
       <workItem from="1691926335659" duration="1779000" />
       <workItem from="1691990614039" duration="10721000" />
-      <workItem from="1692071333054" duration="3865000" />
+      <workItem from="1692071333054" duration="4505000" />
     </task>
     <task id="LOCAL-00001" summary="0.0 version">
       <created>1692007026739</created>
@@ -169,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692007026740</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1.0 version 使用动态代理">
+      <created>1692084637008</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1692084637009</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,7 +188,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="0.0 version" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.0 version" />
+    <MESSAGE value="1.0 version 使用动态代理" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.0 version 使用动态代理" />
   </component>
   <component name="WindowStateProjectService">
     <state x="659" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1692083763411">
@@ -207,22 +208,22 @@
       <screen x="0" y="0" width="1707" height="1067" />
     </state>
     <state x="706" y="431" key="Github.ShareDialog/0.0.1707.1067@0.0.1707.1067" timestamp="1692007096103" />
-    <state width="1663" height="291" key="GridCell.Tab.0.bottom" timestamp="1692072544975">
+    <state width="1663" height="291" key="GridCell.Tab.0.bottom" timestamp="1692085000128">
       <screen x="0" y="0" width="1707" height="1067" />
     </state>
-    <state width="1663" height="291" key="GridCell.Tab.0.bottom/0.0.1707.1067@0.0.1707.1067" timestamp="1692072544975" />
-    <state width="1663" height="291" key="GridCell.Tab.0.center" timestamp="1692072544975">
+    <state width="1663" height="291" key="GridCell.Tab.0.bottom/0.0.1707.1067@0.0.1707.1067" timestamp="1692085000128" />
+    <state width="1663" height="291" key="GridCell.Tab.0.center" timestamp="1692085000128">
       <screen x="0" y="0" width="1707" height="1067" />
     </state>
-    <state width="1663" height="291" key="GridCell.Tab.0.center/0.0.1707.1067@0.0.1707.1067" timestamp="1692072544975" />
-    <state width="1663" height="291" key="GridCell.Tab.0.left" timestamp="1692072544975">
+    <state width="1663" height="291" key="GridCell.Tab.0.center/0.0.1707.1067@0.0.1707.1067" timestamp="1692085000128" />
+    <state width="1663" height="291" key="GridCell.Tab.0.left" timestamp="1692085000128">
       <screen x="0" y="0" width="1707" height="1067" />
     </state>
-    <state width="1663" height="291" key="GridCell.Tab.0.left/0.0.1707.1067@0.0.1707.1067" timestamp="1692072544975" />
-    <state width="1663" height="291" key="GridCell.Tab.0.right" timestamp="1692072544975">
+    <state width="1663" height="291" key="GridCell.Tab.0.left/0.0.1707.1067@0.0.1707.1067" timestamp="1692085000128" />
+    <state width="1663" height="291" key="GridCell.Tab.0.right" timestamp="1692085000128">
       <screen x="0" y="0" width="1707" height="1067" />
     </state>
-    <state width="1663" height="291" key="GridCell.Tab.0.right/0.0.1707.1067@0.0.1707.1067" timestamp="1692072544975" />
+    <state width="1663" height="291" key="GridCell.Tab.0.right/0.0.1707.1067@0.0.1707.1067" timestamp="1692085000128" />
     <state width="1663" height="358" key="GridCell.Tab.1.bottom" timestamp="1691941044445">
       <screen x="0" y="0" width="1707" height="1067" />
     </state>
@@ -243,10 +244,10 @@
       <screen x="0" y="0" width="1707" height="1067" />
     </state>
     <state x="355" y="178" key="SettingsEditor/0.0.1707.1067@0.0.1707.1067" timestamp="1692006930508" />
-    <state x="446" y="267" key="Vcs.Push.Dialog.v2" timestamp="1692008409608">
+    <state x="446" y="267" key="Vcs.Push.Dialog.v2" timestamp="1692084645262">
       <screen x="0" y="0" width="1707" height="1067" />
     </state>
-    <state x="446" y="267" key="Vcs.Push.Dialog.v2/0.0.1707.1067@0.0.1707.1067" timestamp="1692008409608" />
+    <state x="446" y="267" key="Vcs.Push.Dialog.v2/0.0.1707.1067@0.0.1707.1067" timestamp="1692084645262" />
     <state x="241" y="194" key="new project wizard" timestamp="1691922762931">
       <screen x="0" y="0" width="1707" height="1067" />
     </state>
