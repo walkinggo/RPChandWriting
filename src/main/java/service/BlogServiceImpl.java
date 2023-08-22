@@ -1,4 +1,4 @@
-package server;
+package service;
 
 import common.Blog;
 import service.BlogService;

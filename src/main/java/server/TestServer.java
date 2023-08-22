@@ -5,18 +5,14 @@ import service.BlogServiceImpl;
 import service.UserService;
 import service.UserServiceImpl;
 
-public class serverStart {
+public class TestServer {
     public static void main(String[] args) {
         UserService userService = new UserServiceImpl();
         BlogService blogService = new BlogServiceImpl();
         ServiceProvide serviceProvide = new ServiceProvide();
-//        HashMap<String, Object> serviceProvide = new HashMap<>();
-//        serviceProvide.put(userService.getClass().getName(),userService);
-//        serviceProvide.put(blogService.getClass().getName(),blogService);
         serviceProvide.provideServiceInterface(userService);
         serviceProvide.provideServiceInterface(blogService);
-        SimpleRPCRPCServer simpleRPCRPCServer = new SimpleRPCRPCServer(serviceProvide);
-        simpleRPCRPCServer.start(8899);
-
+        RPCServer RPCServer = new NettyRPCServer(serviceProvide);
+        RPCServer.start(8899);
     }
 }

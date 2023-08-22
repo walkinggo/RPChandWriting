@@ -14,7 +14,7 @@ public class ServiceProvide {
     }
 
     public void provideServiceInterface(Object service){
-        String serviceName = service.getClass().getName();
+//        String serviceName = service.getClass().getName();
         Class<?>[] interfaces = service.getClass().getInterfaces();
         for (Class<?> clazz : interfaces) {
             interfaceProvide.put(clazz.getName(),service);

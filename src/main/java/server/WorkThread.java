@@ -46,13 +46,15 @@ public class WorkThread implements Runnable {
         } catch (NoSuchMethodException e) {
             e.printStackTrace();
             log.warn("没有找到对应的服务");
+            return RPCResponse.fail();
         } catch (IllegalAccessException e) {
             e.printStackTrace();
             log.warn("方法参数异常");
+            return RPCResponse.fail();
         } catch (InvocationTargetException e) {
             e.printStackTrace();
             log.warn("方法调用异常");
+            return RPCResponse.fail();
         }
-        return RPCResponse.fail();
     }
 }
