@@ -176,8 +176,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestClient" />
         <item itemvalue="Application.TestServer" />
+        <item itemvalue="Application.TestClient" />
         <item itemvalue="Application.chatClient3" />
         <item itemvalue="Application.chatClient2" />
         <item itemvalue="Application.chatServer" />
