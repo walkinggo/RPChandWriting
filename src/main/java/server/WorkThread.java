@@ -2,6 +2,7 @@ package server;
 
 import common.RPCRequest;
 import common.RPCResponse;
+import common.builder.RPCResponseBuilder;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
@@ -11,7 +12,6 @@ import java.io.ObjectOutputStream;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.net.Socket;
-import java.util.Map;
 
 @Slf4j
 @AllArgsConstructor
@@ -42,19 +42,19 @@ public class WorkThread implements Runnable {
             Object service = serviceProvide.getService(interfaceName);
             Method method = service.getClass().getMethod(request.getMethodName(), request.getParamsTypes());
             Object invoke = method.invoke(service, request.getParams());
-            return RPCResponse.success(invoke);
+            return RPCResponseBuilder.success(invoke);
         } catch (NoSuchMethodException e) {
             e.printStackTrace();
             log.warn("没有找到对应的服务");
-            return RPCResponse.fail();
+            return RPCResponseBuilder.fail();
         } catch (IllegalAccessException e) {
             e.printStackTrace();
             log.warn("方法参数异常");
-            return RPCResponse.fail();
+            return RPCResponseBuilder.fail();
         } catch (InvocationTargetException e) {
             e.printStackTrace();
             log.warn("方法调用异常");
-            return RPCResponse.fail();
+            return RPCResponseBuilder.fail();
         }
     }
 }

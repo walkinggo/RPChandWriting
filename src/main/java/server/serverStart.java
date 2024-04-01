@@ -9,7 +9,7 @@ public class serverStart {
     public static void main(String[] args) {
         UserService userService = new UserServiceImpl();
         BlogService blogService = new BlogServiceImpl();
-        ServiceProvide serviceProvide = new ServiceProvide();
+        ServiceProvide serviceProvide = new ServiceProvide("127.0.0.1",8899);
 //        HashMap<String, Object> serviceProvide = new HashMap<>();
 //        serviceProvide.put(userService.getClass().getName(),userService);
 //        serviceProvide.put(blogService.getClass().getName(),blogService);

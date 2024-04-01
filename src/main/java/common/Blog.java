@@ -13,6 +13,6 @@ import java.io.Serializable;
 @AllArgsConstructor
 public class Blog implements Serializable {
     private Integer id;
-    private Integer useId;
+    private Integer userId;
     private String title;
 }

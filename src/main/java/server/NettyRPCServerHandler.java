@@ -2,6 +2,7 @@ package server;
 
 import common.RPCRequest;
 import common.RPCResponse;
+import common.builder.RPCResponseBuilder;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import lombok.AllArgsConstructor;
@@ -35,11 +36,11 @@ public class NettyRPCServerHandler extends SimpleChannelInboundHandler<RPCReques
         try {
             method = service.getClass().getMethod(request.getMethodName(), request.getParamsTypes());
             Object invoke = method.invoke(service, request.getParams());
-            return RPCResponse.success(invoke);
+            return RPCResponseBuilder.success(invoke);
         } catch (NoSuchMethodException | InvocationTargetException | IllegalAccessException e) {
             e.printStackTrace();
             log.info("方法执行错误");
-            return RPCResponse.fail();
+            return RPCResponseBuilder.fail();
         }
     }
 }
