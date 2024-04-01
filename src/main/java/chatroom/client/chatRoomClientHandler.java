@@ -1,5 +1,7 @@
-package chatroom.common;
+package chatroom.client;
 
+
+import chatroom.common.serialization.Request;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import lombok.extern.slf4j.Slf4j;

@@ -1,6 +1,6 @@
 syntax = "proto3";
 package chatroom.common.serialization;
-option java_outer_classname = "message_proto";
+option java_multiple_files = true;
 message Message {
   string uid = 1;
   string msg = 2;

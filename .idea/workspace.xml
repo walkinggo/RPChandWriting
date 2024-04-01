@@ -22,27 +22,33 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31add1b6-210b-4bff-89b7-6b9b4d286aac" name="Default Changelist" comment="2.0 version 重构服务端。可以提供不同的服务。代码更加简洁">
-      <change afterPath="$PROJECT_DIR$/src/main/java/chatroom/client/chatClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chatroom/client/chatClient2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chatroom/client/chatClient3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chatroom/common/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chatroom/common/Request.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chatroom/common/chatRoomClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chatroom/common/messageBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chatroom/common/requestBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chatroom/common/serialization/Request.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chatroom/server/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chatroom/server/chatRoomServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chatroom/server/chatServer.java" afterDir="false" />
+    <list default="true" id="31add1b6-210b-4bff-89b7-6b9b4d286aac" name="Default Changelist" comment="2.1 新增简单聊天室模块。">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/NettyServerInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/NettyServerInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/client/RPCClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/RPCClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/common/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/common/User$UserBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/common/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/common/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/RPCServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/RPCServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chatroom/client/chatClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chatroom/client/chatClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chatroom/common/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chatroom/common/defaultPojo/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chatroom/common/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chatroom/common/defaultPojo/Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chatroom/common/chatRoomClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chatroom/client/chatRoomClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chatroom/common/messageBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chatroom/common/serialization/messageBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chatroom/common/requestBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chatroom/common/serialization/requestBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chatroom/common/serialization/Request.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chatroom/common/serialization/Request.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chatroom/common/serialization/message_proto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chatroom/server/chatRoomServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chatroom/server/chatRoomServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chatroom/server/chatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chatroom/server/chatServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/chatroom/client/chatClient$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/chatroom/client/chatClient$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/chatroom/client/chatClient$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/chatroom/client/chatClient$chatClientBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/chatroom/client/chatClient$chatClientBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/chatroom/client/chatClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/chatroom/client/chatClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/chatroom/common/Message$MessageBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/chatroom/common/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/chatroom/common/Request$RequestBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/chatroom/common/Request.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/chatroom/common/chatRoomClientHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/chatroom/common/messageBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/chatroom/common/requestBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/chatroom/server/chatRoomServerHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/chatroom/server/chatRoomServerHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/chatroom/server/chatServer$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/chatroom/server/chatServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/chatroom/server/chatServer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/chatroom/server/chatServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/chatroom/server/chatServer.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +103,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.chatClient2">
+  <component name="RunManager" selected="Application.chatClient3">
     <configuration name="TestClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="client.TestClient" />
       <module name="RPChandWriting" />
@@ -176,10 +182,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.chatClient2" />
-        <item itemvalue="Application.chatClient" />
-        <item itemvalue="Application.chatServer" />
         <item itemvalue="Application.chatClient3" />
+        <item itemvalue="Application.chatClient2" />
+        <item itemvalue="Application.chatServer" />
+        <item itemvalue="Application.chatClient" />
         <item itemvalue="Application.TestClient" />
       </list>
     </recent_temporary>
@@ -210,7 +216,7 @@
       <workItem from="1711889184283" duration="1227000" />
       <workItem from="1711891640642" duration="46000" />
       <workItem from="1711891845165" duration="1422000" />
-      <workItem from="1711894724752" duration="1735000" />
+      <workItem from="1711894724752" duration="5464000" />
     </task>
     <task id="LOCAL-00001" summary="0.0 version">
       <created>1692007026739</created>
@@ -240,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692090186434</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="2.1 新增简单聊天室模块。">
+      <created>1711945863241</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711945863241</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,7 +276,8 @@
     <MESSAGE value="1.0 version 使用动态代理" />
     <MESSAGE value="1.0 version 使用动态代理。修改warn" />
     <MESSAGE value="2.0 version 重构服务端。可以提供不同的服务。代码更加简洁" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.0 version 重构服务端。可以提供不同的服务。代码更加简洁" />
+    <MESSAGE value="2.1 新增简单聊天室模块。" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.1 新增简单聊天室模块。" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1002" y="532" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1711875360142">
@@ -274,26 +288,26 @@
       <screen x="0" y="24" width="2560" height="1416" />
     </state>
     <state x="1085" y="437" key="#com.intellij.ide.util.MemberChooser/-2560.122.1707.1051/0.24.2560.1416@0.24.2560.1416" timestamp="1711799018798" />
-    <state width="2517" height="405" key="GridCell.Tab.0.bottom" timestamp="1711883027593">
+    <state width="2517" height="405" key="GridCell.Tab.0.bottom" timestamp="1711951531685">
       <screen x="0" y="24" width="2560" height="1416" />
     </state>
     <state width="2517" height="414" key="GridCell.Tab.0.bottom/-2560.106.1707.1067/0.0.2560.1440@0.0.2560.1440" timestamp="1711633109199" />
-    <state width="2517" height="405" key="GridCell.Tab.0.bottom/-2560.122.1707.1051/0.24.2560.1416@0.24.2560.1416" timestamp="1711883027593" />
-    <state width="2517" height="405" key="GridCell.Tab.0.center" timestamp="1711883027592">
+    <state width="2517" height="405" key="GridCell.Tab.0.bottom/-2560.122.1707.1051/0.24.2560.1416@0.24.2560.1416" timestamp="1711951531685" />
+    <state width="2517" height="405" key="GridCell.Tab.0.center" timestamp="1711951531685">
       <screen x="0" y="24" width="2560" height="1416" />
     </state>
     <state width="2517" height="414" key="GridCell.Tab.0.center/-2560.106.1707.1067/0.0.2560.1440@0.0.2560.1440" timestamp="1711633109199" />
-    <state width="2517" height="405" key="GridCell.Tab.0.center/-2560.122.1707.1051/0.24.2560.1416@0.24.2560.1416" timestamp="1711883027592" />
-    <state width="2517" height="405" key="GridCell.Tab.0.left" timestamp="1711883027592">
+    <state width="2517" height="405" key="GridCell.Tab.0.center/-2560.122.1707.1051/0.24.2560.1416@0.24.2560.1416" timestamp="1711951531685" />
+    <state width="2517" height="405" key="GridCell.Tab.0.left" timestamp="1711951531685">
       <screen x="0" y="24" width="2560" height="1416" />
     </state>
     <state width="2517" height="414" key="GridCell.Tab.0.left/-2560.106.1707.1067/0.0.2560.1440@0.0.2560.1440" timestamp="1711633109198" />
-    <state width="2517" height="405" key="GridCell.Tab.0.left/-2560.122.1707.1051/0.24.2560.1416@0.24.2560.1416" timestamp="1711883027592" />
-    <state width="2517" height="405" key="GridCell.Tab.0.right" timestamp="1711883027592">
+    <state width="2517" height="405" key="GridCell.Tab.0.left/-2560.122.1707.1051/0.24.2560.1416@0.24.2560.1416" timestamp="1711951531685" />
+    <state width="2517" height="405" key="GridCell.Tab.0.right" timestamp="1711951531685">
       <screen x="0" y="24" width="2560" height="1416" />
     </state>
     <state width="2517" height="414" key="GridCell.Tab.0.right/-2560.106.1707.1067/0.0.2560.1440@0.0.2560.1440" timestamp="1711633109199" />
-    <state width="2517" height="405" key="GridCell.Tab.0.right/-2560.122.1707.1051/0.24.2560.1416@0.24.2560.1416" timestamp="1711883027592" />
+    <state width="2517" height="405" key="GridCell.Tab.0.right/-2560.122.1707.1051/0.24.2560.1416@0.24.2560.1416" timestamp="1711951531685" />
     <state width="2517" height="497" key="GridCell.Tab.1.bottom" timestamp="1711807658248">
       <screen x="0" y="24" width="2560" height="1416" />
     </state>
@@ -314,6 +328,10 @@
       <screen x="0" y="24" width="2560" height="1416" />
     </state>
     <state x="781" y="376" key="SettingsEditor/-2560.122.1707.1051/0.24.2560.1416@0.24.2560.1416" timestamp="1711894583694" />
+    <state x="872" y="465" key="Vcs.Push.Dialog.v2" timestamp="1711945873157">
+      <screen x="0" y="24" width="2560" height="1416" />
+    </state>
+    <state x="872" y="465" key="Vcs.Push.Dialog.v2/-2560.122.1707.1051/0.24.2560.1416@0.24.2560.1416" timestamp="1711945873157" />
     <state x="943" y="343" width="672" height="678" key="search.everywhere.popup" timestamp="1711875697625">
       <screen x="0" y="24" width="2560" height="1416" />
     </state>

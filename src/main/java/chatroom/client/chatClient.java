@@ -1,8 +1,8 @@
 package chatroom.client;
 
-import chatroom.common.Request;
-import chatroom.common.chatRoomClientHandler;
-import chatroom.common.requestBuilder;
+
+import chatroom.common.serialization.requestBuilder;
+import chatroom.common.serialization.Request;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -10,6 +10,10 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.handler.codec.LengthFieldBasedFrameDecoder;
 import io.netty.handler.codec.LengthFieldPrepender;
+import io.netty.handler.codec.protobuf.ProtobufDecoder;
+import io.netty.handler.codec.protobuf.ProtobufEncoder;
+import io.netty.handler.codec.protobuf.ProtobufVarint32FrameDecoder;
+import io.netty.handler.codec.protobuf.ProtobufVarint32LengthFieldPrepender;
 import io.netty.handler.codec.serialization.ClassResolver;
 import io.netty.handler.codec.serialization.ObjectDecoder;
 import io.netty.handler.codec.serialization.ObjectEncoder;
@@ -37,23 +41,10 @@ public class chatClient {
                 @Override
                 protected void initChannel(SocketChannel ch) throws Exception {
                     ChannelPipeline pipeline = ch.pipeline();
-                    pipeline.addLast(new LengthFieldBasedFrameDecoder(Integer.MAX_VALUE, 0, 4, 0, 4));
-                    pipeline.addLast(new LengthFieldPrepender(4));
-                    pipeline.addLast(new ObjectEncoder());
-                    pipeline.addLast(new ObjectDecoder(new ClassResolver() {
-                        @Override
-                        public Class<?> resolve(String className) throws ClassNotFoundException {
-                            try {
-                                return Class.forName((className));
-                            } catch (ClassNotFoundException e) {
-                                log.warn("RPC请求类" + className + "不存在，将返回默认请求类");
-                                e.printStackTrace();
-                                return Class.forName("chatroom.common.Request");
-                            }
-                        }
-                    }
-                    ));
-
+                    pipeline.addLast(new ProtobufVarint32FrameDecoder());
+                    pipeline.addLast(new ProtobufDecoder(Request.getDefaultInstance()));
+                    pipeline.addLast(new ProtobufVarint32LengthFieldPrepender());
+                    pipeline.addLast(new ProtobufEncoder());
                     pipeline.addLast(new chatRoomClientHandler());
                 }
             });

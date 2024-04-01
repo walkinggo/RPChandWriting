@@ -1,4 +1,4 @@
-package chatroom.common;
+package chatroom.common.defaultPojo;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

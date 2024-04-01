@@ -1,7 +1,8 @@
 package chatroom.server;
 
-import chatroom.common.Message;
-import chatroom.common.Request;
+
+import chatroom.common.serialization.Message;
+import chatroom.common.serialization.Request;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
@@ -23,8 +24,8 @@ public class chatRoomServerHandler extends SimpleChannelInboundHandler<Request> 
     protected void channelRead0(ChannelHandlerContext ctx, Request msg) throws Exception {
         Channel channel = ctx.channel();
         String sentence = "[" + channel.remoteAddress() + "]说:" + msg.getMessage().getMsg();
-        Message build = Message.builder().msg(sentence).date(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date())).uid(UUID.randomUUID().toString()).build();
-        Request request = Request.builder().message(build).code(200).build();
+        Message build = Message.newBuilder().setMsg(sentence).setDate(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date())).setUid(UUID.randomUUID().toString()).build();
+        Request request = Request.newBuilder().setMessage(build).setCode(200).build();
 //        log.info("服务器收到新消息");
         log.info(request.getMessage().getMsg());
         for (Channel cg : channelGroup) {
