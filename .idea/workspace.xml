@@ -23,30 +23,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31add1b6-210b-4bff-89b7-6b9b4d286aac" name="Default Changelist" comment="2.0 version 重构服务端。可以提供不同的服务。代码更加简洁">
-      <change afterPath="$PROJECT_DIR$/src/main/java/client/NettyClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/client/NettyClientInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/client/NettyRPCClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/client/RPCClientProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/client/SimpleRPCClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/client/TestClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/NettyRPCServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/NettyRPCServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/NettyServerInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/TestServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chatroom/client/chatClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chatroom/client/chatClient2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chatroom/client/chatClient3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chatroom/common/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chatroom/common/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chatroom/common/chatRoomClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chatroom/common/messageBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chatroom/common/requestBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chatroom/common/serialization/Request.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chatroom/server/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chatroom/server/chatRoomServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chatroom/server/chatServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/RPCClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/RPCClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/BlogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/ServiceProvide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/ServiceProvide.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/WorkThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/WorkThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/serverStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/serverStart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RPChandWriting-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/RPChandWriting-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/NettyServerInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/NettyServerInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/client/RPCClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/RPCClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/common/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/common/User$UserBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/common/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/common/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/RPCServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/RPCServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/UserService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +85,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="GO_FMT" value="true" />
+    <property name="GenProtobuf.quickGen" value="Java" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -98,29 +95,9 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.TestClient">
-    <configuration name="NextFridayCalculation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="NextFridayCalculation" />
-      <module name="RPChandWriting" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RPCClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="client.RPCClient" />
-      <module name="RPChandWriting" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.chatClient2">
     <configuration name="TestClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="client.TestClient" />
       <module name="RPChandWriting" />
@@ -134,12 +111,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="server.TestServer" />
+    <configuration name="chatClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chatroom.client.chatClient" />
       <module name="RPChandWriting" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="server.*" />
+          <option name="PATTERN" value="chatroom.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,12 +124,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="serverStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="server.serverStart" />
+    <configuration name="chatClient2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chatroom.client.chatClient2" />
       <module name="RPChandWriting" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="service.*" />
+          <option name="PATTERN" value="chatroom.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="chatClient3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chatroom.client.chatClient3" />
+      <module name="RPChandWriting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chatroom.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="chatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chatroom.server.chatServer" />
+      <module name="RPChandWriting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chatroom.server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -173,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.chatClient2" />
+        <item itemvalue="Application.chatClient" />
+        <item itemvalue="Application.chatServer" />
+        <item itemvalue="Application.chatClient3" />
         <item itemvalue="Application.TestClient" />
-        <item itemvalue="Application.TestServer" />
-        <item itemvalue="Application.serverStart" />
-        <item itemvalue="Application.RPCClient" />
-        <item itemvalue="Application.NextFridayCalculation" />
       </list>
     </recent_temporary>
   </component>
@@ -199,6 +202,15 @@
       <workItem from="1692543733944" duration="16000" />
       <workItem from="1692600426143" duration="5018000" />
       <workItem from="1692677567921" duration="6466000" />
+      <workItem from="1711628111411" duration="3339000" />
+      <workItem from="1711633164493" duration="3769000" />
+      <workItem from="1711692568641" duration="30944000" />
+      <workItem from="1711869782159" duration="2157000" />
+      <workItem from="1711884435182" duration="605000" />
+      <workItem from="1711889184283" duration="1227000" />
+      <workItem from="1711891640642" duration="46000" />
+      <workItem from="1711891845165" duration="1422000" />
+      <workItem from="1711894724752" duration="1735000" />
     </task>
     <task id="LOCAL-00001" summary="0.0 version">
       <created>1692007026739</created>
@@ -254,65 +266,57 @@
     <option name="LAST_COMMIT_MESSAGE" value="2.0 version 重构服务端。可以提供不同的服务。代码更加简洁" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="659" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1692681407294">
-      <screen x="0" y="0" width="1707" height="1067" />
+    <state x="1002" y="532" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1711875360142">
+      <screen x="0" y="24" width="2560" height="1416" />
     </state>
-    <state x="659" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1707.1067@0.0.1707.1067" timestamp="1692681407294" />
-    <state x="634" y="275" key="FileChooserDialogImpl" timestamp="1692006959650">
-      <screen x="0" y="0" width="1707" height="1067" />
+    <state x="1002" y="532" key="#com.intellij.fileTypes.FileTypeChooser/-2560.122.1707.1051/0.24.2560.1416@0.24.2560.1416" timestamp="1711875360142" />
+    <state x="1085" y="437" key="#com.intellij.ide.util.MemberChooser" timestamp="1711799018798">
+      <screen x="0" y="24" width="2560" height="1416" />
     </state>
-    <state x="634" y="275" key="FileChooserDialogImpl/0.0.1707.1067@0.0.1707.1067" timestamp="1692006959650" />
-    <state x="668" y="453" key="Github.CreateGistDialog" timestamp="1692006834581">
-      <screen x="0" y="0" width="1707" height="1067" />
+    <state x="1085" y="437" key="#com.intellij.ide.util.MemberChooser/-2560.122.1707.1051/0.24.2560.1416@0.24.2560.1416" timestamp="1711799018798" />
+    <state width="2517" height="405" key="GridCell.Tab.0.bottom" timestamp="1711883027593">
+      <screen x="0" y="24" width="2560" height="1416" />
     </state>
-    <state x="668" y="453" key="Github.CreateGistDialog/0.0.1707.1067@0.0.1707.1067" timestamp="1692006834581" />
-    <state x="706" y="431" key="Github.ShareDialog" timestamp="1692007096103">
-      <screen x="0" y="0" width="1707" height="1067" />
+    <state width="2517" height="414" key="GridCell.Tab.0.bottom/-2560.106.1707.1067/0.0.2560.1440@0.0.2560.1440" timestamp="1711633109199" />
+    <state width="2517" height="405" key="GridCell.Tab.0.bottom/-2560.122.1707.1051/0.24.2560.1416@0.24.2560.1416" timestamp="1711883027593" />
+    <state width="2517" height="405" key="GridCell.Tab.0.center" timestamp="1711883027592">
+      <screen x="0" y="24" width="2560" height="1416" />
     </state>
-    <state x="706" y="431" key="Github.ShareDialog/0.0.1707.1067@0.0.1707.1067" timestamp="1692007096103" />
-    <state width="1663" height="358" key="GridCell.Tab.0.bottom" timestamp="1692683611472">
-      <screen x="0" y="0" width="1707" height="1067" />
+    <state width="2517" height="414" key="GridCell.Tab.0.center/-2560.106.1707.1067/0.0.2560.1440@0.0.2560.1440" timestamp="1711633109199" />
+    <state width="2517" height="405" key="GridCell.Tab.0.center/-2560.122.1707.1051/0.24.2560.1416@0.24.2560.1416" timestamp="1711883027592" />
+    <state width="2517" height="405" key="GridCell.Tab.0.left" timestamp="1711883027592">
+      <screen x="0" y="24" width="2560" height="1416" />
     </state>
-    <state width="1663" height="358" key="GridCell.Tab.0.bottom/0.0.1707.1067@0.0.1707.1067" timestamp="1692683611472" />
-    <state width="1663" height="358" key="GridCell.Tab.0.center" timestamp="1692683611472">
-      <screen x="0" y="0" width="1707" height="1067" />
+    <state width="2517" height="414" key="GridCell.Tab.0.left/-2560.106.1707.1067/0.0.2560.1440@0.0.2560.1440" timestamp="1711633109198" />
+    <state width="2517" height="405" key="GridCell.Tab.0.left/-2560.122.1707.1051/0.24.2560.1416@0.24.2560.1416" timestamp="1711883027592" />
+    <state width="2517" height="405" key="GridCell.Tab.0.right" timestamp="1711883027592">
+      <screen x="0" y="24" width="2560" height="1416" />
     </state>
-    <state width="1663" height="358" key="GridCell.Tab.0.center/0.0.1707.1067@0.0.1707.1067" timestamp="1692683611472" />
-    <state width="1663" height="358" key="GridCell.Tab.0.left" timestamp="1692683611472">
-      <screen x="0" y="0" width="1707" height="1067" />
+    <state width="2517" height="414" key="GridCell.Tab.0.right/-2560.106.1707.1067/0.0.2560.1440@0.0.2560.1440" timestamp="1711633109199" />
+    <state width="2517" height="405" key="GridCell.Tab.0.right/-2560.122.1707.1051/0.24.2560.1416@0.24.2560.1416" timestamp="1711883027592" />
+    <state width="2517" height="497" key="GridCell.Tab.1.bottom" timestamp="1711807658248">
+      <screen x="0" y="24" width="2560" height="1416" />
     </state>
-    <state width="1663" height="358" key="GridCell.Tab.0.left/0.0.1707.1067@0.0.1707.1067" timestamp="1692683611472" />
-    <state width="1663" height="358" key="GridCell.Tab.0.right" timestamp="1692683611472">
-      <screen x="0" y="0" width="1707" height="1067" />
+    <state width="2517" height="497" key="GridCell.Tab.1.bottom/-2560.122.1707.1051/0.24.2560.1416@0.24.2560.1416" timestamp="1711807658248" />
+    <state width="2517" height="497" key="GridCell.Tab.1.center" timestamp="1711807658248">
+      <screen x="0" y="24" width="2560" height="1416" />
     </state>
-    <state width="1663" height="358" key="GridCell.Tab.0.right/0.0.1707.1067@0.0.1707.1067" timestamp="1692683611472" />
-    <state width="1663" height="358" key="GridCell.Tab.1.bottom" timestamp="1692683611472">
-      <screen x="0" y="0" width="1707" height="1067" />
+    <state width="2517" height="497" key="GridCell.Tab.1.center/-2560.122.1707.1051/0.24.2560.1416@0.24.2560.1416" timestamp="1711807658248" />
+    <state width="2517" height="497" key="GridCell.Tab.1.left" timestamp="1711807658248">
+      <screen x="0" y="24" width="2560" height="1416" />
     </state>
-    <state width="1663" height="358" key="GridCell.Tab.1.bottom/0.0.1707.1067@0.0.1707.1067" timestamp="1692683611472" />
-    <state width="1663" height="358" key="GridCell.Tab.1.center" timestamp="1692683611472">
-      <screen x="0" y="0" width="1707" height="1067" />
+    <state width="2517" height="497" key="GridCell.Tab.1.left/-2560.122.1707.1051/0.24.2560.1416@0.24.2560.1416" timestamp="1711807658248" />
+    <state width="2517" height="497" key="GridCell.Tab.1.right" timestamp="1711807658248">
+      <screen x="0" y="24" width="2560" height="1416" />
     </state>
-    <state width="1663" height="358" key="GridCell.Tab.1.center/0.0.1707.1067@0.0.1707.1067" timestamp="1692683611472" />
-    <state width="1663" height="358" key="GridCell.Tab.1.left" timestamp="1692683611472">
-      <screen x="0" y="0" width="1707" height="1067" />
+    <state width="2517" height="497" key="GridCell.Tab.1.right/-2560.122.1707.1051/0.24.2560.1416@0.24.2560.1416" timestamp="1711807658248" />
+    <state x="781" y="376" key="SettingsEditor" timestamp="1711894583694">
+      <screen x="0" y="24" width="2560" height="1416" />
     </state>
-    <state width="1663" height="358" key="GridCell.Tab.1.left/0.0.1707.1067@0.0.1707.1067" timestamp="1692683611472" />
-    <state width="1663" height="358" key="GridCell.Tab.1.right" timestamp="1692683611472">
-      <screen x="0" y="0" width="1707" height="1067" />
+    <state x="781" y="376" key="SettingsEditor/-2560.122.1707.1051/0.24.2560.1416@0.24.2560.1416" timestamp="1711894583694" />
+    <state x="943" y="343" width="672" height="678" key="search.everywhere.popup" timestamp="1711875697625">
+      <screen x="0" y="24" width="2560" height="1416" />
     </state>
-    <state width="1663" height="358" key="GridCell.Tab.1.right/0.0.1707.1067@0.0.1707.1067" timestamp="1692683611472" />
-    <state x="355" y="178" key="SettingsEditor" timestamp="1692006930508">
-      <screen x="0" y="0" width="1707" height="1067" />
-    </state>
-    <state x="355" y="178" key="SettingsEditor/0.0.1707.1067@0.0.1707.1067" timestamp="1692006930508" />
-    <state x="446" y="267" key="Vcs.Push.Dialog.v2" timestamp="1692090197938">
-      <screen x="0" y="0" width="1707" height="1067" />
-    </state>
-    <state x="446" y="267" key="Vcs.Push.Dialog.v2/0.0.1707.1067@0.0.1707.1067" timestamp="1692090197938" />
-    <state x="241" y="194" key="new project wizard" timestamp="1691922762931">
-      <screen x="0" y="0" width="1707" height="1067" />
-    </state>
-    <state x="241" y="194" key="new project wizard/0.0.1707.1067@0.0.1707.1067" timestamp="1691922762931" />
+    <state x="943" y="343" width="672" height="678" key="search.everywhere.popup/-2560.122.1707.1051/0.24.2560.1416@0.24.2560.1416" timestamp="1711875697625" />
   </component>
 </project>

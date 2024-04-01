@@ -1,0 +1,13 @@
+syntax = "proto3";
+package chatroom.common.serialization;
+option java_outer_classname = "message_proto";
+message Message {
+  string uid = 1;
+  string msg = 2;
+  string date = 3;
+}
+
+message Request {
+  Message message = 1;
+  int32 code = 2;
+}
